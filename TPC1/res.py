@@ -113,10 +113,12 @@ def drawColesterolRange(list):
     print("\nDoentes de acordo com o seu nível de colesterol:\n \n")
 
     print(" Colesterol    Nº Doentes    Nº Saudaveis    Percentagem ")
-    #for i in range(maximo):
-        #print(str(i*10) + "-" + str(i*10+10) + ": " + str(list[i]) + " de " + str(total[i]) + " doentes -> " + str(divide(list[i],total[i])*100) + "%")
+
     for i in range(list[2]):
         print(" " + str(i*10) + "-" + str(i*10+10) + " " * (13 - (len(str(i*10)) + len(str(i*10+10))))  + str(list[0][i]) + " " * (14 - len(str(list[0][i])))  + str(list[1][i]) + " " * (16 - len(str(list[1][i]))) + str(round(divide(list[0][i],list[1][i])*100, 2)) + "%")
+
+
+
 
         # MAIN
 
